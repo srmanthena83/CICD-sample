@@ -1,4 +1,4 @@
-node("master")
+node("maven-builds")
 {
  stage("SCM Checkout")
  {
