@@ -3,7 +3,7 @@ node("maven-builds")
  stage("SCM Checkout")
  {
   checkout scm
-  mvnHome = tool 'M3'
+  mvnHome = '/opt/apache-maven-3.9.4/'
  }
 
  stage('Build') {
