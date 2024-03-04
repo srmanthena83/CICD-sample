@@ -1,4 +1,9 @@
-node("maven-builds")
+pipeline {
+    agent any
+    options {
+        // Timeout counter starts AFTER agent is allocated
+        timeout(time: 1, unit: 'SECONDS')
+    }
 {
  stage("SCM Checkout")
  {
